@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Employer Registration</h2>
+<form method="post">
+  {% csrf_token %}
+  {% for fm in form %}
+  {{fm.label_tag}} {{fm}} {{fm.errors|striptags}}
+  {% endfor %}
+  
+  <button type="submit" class="btn btn-primary mt-3">Register</button>
+</form>
+{% endblock %}

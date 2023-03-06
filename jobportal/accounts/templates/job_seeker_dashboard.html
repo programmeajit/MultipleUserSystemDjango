@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome, {{ job_seeker.user.username }}!</h2>
+<!-- Add job seeker dashboard content here -->
+<a href="{% url 'job_seeker_logout' %}">Logout</a>
+{% endblock %}

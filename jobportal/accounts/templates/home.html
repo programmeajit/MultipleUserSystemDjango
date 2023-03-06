@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1 class="text-center">Welcome to My Job Board!</h1>
+    <p>This is a job board website where job seekers can search for and apply to job postings,
+        and employers can post new job openings.  </p>
+        
+        <div class="row">
+            <div class="col-6">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Job Seeker</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="{% url 'job_seeker_register' %}" class="card-link">Job Seeker Register</a>
+                      <a href="{% url 'job_seeker_login' %}" class="card-link">Job Seeker Login</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Employer</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="{% url 'employer_register' %}" class="card-link">Employer Register</a>
+                      <a href="{% url 'employer_login' %}" class="card-link">Employer Login</a>
+                      
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+        
+
+        
+
+      
+
+  
+{% endblock %}

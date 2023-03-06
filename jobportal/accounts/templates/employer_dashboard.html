@@ -1,0 +1,8 @@
+<!-- employer_dashboard.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome, {{ employer.user.username }}!</h2>
+<!-- Add employer dashboard content here -->
+<a href="{% url 'employer_logout' %}">Logout</a>
+{% endblock %}
